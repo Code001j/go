@@ -21,7 +21,7 @@ while(!feof($fh)) {
            if (empty($data) AND empty($HDI) AND empty($status)){
             $libera = true;
             $data   = date('d-m-Y');
-            $data   = date('d-m-Y', strtotime("+2 days", strtotime($data))); 
+            $data   = date('d-m-Y', strtotime("+1 month", strtotime($data))); 
             $HDI    = $infoHDI;
             $status = "OK";
             $data_inicial =  date('Y-m-d');
